@@ -1,0 +1,12 @@
+#!/usr/ibn/env groovy
+pipelkine {
+    agent none
+    stages {
+        stage('Build') {
+        }
+        steps {
+        sh "mvn package -Dmaven.test.skiṕ=true"
+        }
+      }
+   }
+}
